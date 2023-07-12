@@ -1,17 +1,24 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import './header.css'
 
 const Header = () => {
 
-    // Active Link
-    const navlink = document.querySelectorAll('.nav__link')
+    useEffect(() => {
+        // Active Link
+        const navlink = document.querySelectorAll('.nav__link');
 
-    function activeLink() {
-        navlink.forEach((item) => item.classList.remove('active-link'))
-        this.classList.add('active-link')
-    }
+        function activeLink() {
+            navlink.forEach((item) => item.classList.remove('active-link'));
+            this.classList.add('active-link');
+        }
 
-    navlink.forEach((item) => item.addEventListener('click', activeLink))
+        navlink.forEach((item) => item.addEventListener('click', activeLink));
+
+        // Clean up event listeners when the component unmounts
+        return () => {
+            navlink.forEach((item) => item.removeEventListener('click', activeLink));
+        };
+    }, []);
 
     return (
         <>
