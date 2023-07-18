@@ -5,6 +5,7 @@ import Home from './components/home/Home';
 import About from './components/about/About';
 import Skills from './components/skills/Skills';
 import Qualification from './components/qualification/Qualification';
+import Achievements from './components/achievements/Achievements';
 
 function App() {
   return (
@@ -16,7 +17,8 @@ function App() {
         <Home />
         <About />
         <Skills />
-        <Qualification />        
+        <Qualification />
+        <Achievements />
       </main>
 
     </>
