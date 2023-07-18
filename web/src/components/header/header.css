@@ -11,6 +11,7 @@
     padding: 1.5rem 0.5rem;
     border-radius: 0.65rem;
     overflow: hidden;
+    z-index: 20;
 }
 
 .nav__list {

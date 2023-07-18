@@ -1,74 +1,99 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import './header.css'
 
 const Header = () => {
+    const [activeNav, setActiveNav] = useState('#home')    
 
     useEffect(() => {
-        // Scroll Sections Active Link 
-        const sections = document.querySelectorAll('section[id]')
-
-        function scrollActive() {
-            const scrollY = window.scrollY
+        const handleScroll = () => {
+            const scrollY = window.scrollY;
+            const sections = document.querySelectorAll('section[id]');
 
             sections.forEach(current => {
-                const sectionHeight = current.offsetHeight,
-                    sectionTop = current.offsetTop - 58,
-                    sectionId = current.getAttribute('id')
+                const sectionHeight = current.offsetHeight;
+                const sectionTop = current.offsetTop - 58;
+                const sectionId = current.getAttribute('id');
 
                 if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
-                    document.querySelector('.nav__list a[href*=' + sectionId + ']').classList.add('active-link')
-                } else {
-                    document.querySelector('.nav__list a[href*=' + sectionId + ']').classList.remove('active-link')
+                    console.log(sectionId)
+                    setActiveNav('#'+ sectionId);
+                    
                 }
-            })
-        }
-        window.addEventListener('scroll', scrollActive)
-
-        // Active Link
-        const navlink = document.querySelectorAll('.nav__link');
-
-        function activeLink() {
-            navlink.forEach((item) => item.classList.remove('active-link'));
-            this.classList.add('active-link');
-        }
-
-        navlink.forEach((item) => item.addEventListener('click', activeLink));
-
-        // Clean up event listeners when the component unmounts
-        return () => {
-            navlink.forEach((item) => item.removeEventListener('click', activeLink));
+            });
         };
-    }, []);
 
+        window.addEventListener('scroll', handleScroll);
+
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);    
+    
     return (
         <>
             <nav className='nav'>
                 <ul className='nav__list'>
-                    <a href='#home' className='nav__link active-link' >
+                    <a
+                        href='#home'
+                        onClick={() => setActiveNav('#home')}
+                        className={
+                            activeNav === '#home'
+                                ? 'nav__link active-link'
+                                : 'nav__link'
+                        }
+                    >
                         <i className="ri-home-5-line"></i>
                         <span className='nav__name'>
                             Home
                         </span>
                     </a>
-                    <a href='#about' className='nav__link'>
+                    <a
+                        href='#about'
+                        onClick={() => setActiveNav('#about')}
+                        className={
+                            activeNav === '#about'
+                                ? 'nav__link active-link'
+                                : 'nav__link'
+                        }>
                         <i className="ri-user-line"></i>
                         <span className='nav__name'>
                             About
                         </span>
                     </a>
-                    <a href='#skills' className='nav__link'>
+                    <a
+                        href='#skills'
+                        onClick={() => setActiveNav('#skills')}
+                        className={
+                            activeNav === '#skills'
+                                ? 'nav__link active-link'
+                                : 'nav__link'
+                        }>
                         <i className="ri-shield-star-line"></i>
                         <span className='nav__name'>
                             Skills
                         </span>
                     </a>
-                    <a href='#portfolio' className='nav__link'>
+                    <a
+                        href='#portfolio'
+                        onClick={() => setActiveNav('#portfolio')}
+                        className={
+                            activeNav === '#portfolio' || activeNav === '#achievements'
+                                ? 'nav__link active-link'
+                                : 'nav__link'
+                        }>
                         <i className="ri-image-line"></i>
                         <span className='nav__name'>
                             Portfolio
                         </span>
                     </a>
-                    <a href='#contact' className='nav__link'>
+                    <a
+                        href='#contact'
+                        onClick={() => setActiveNav('#contact')}
+                        className={
+                            activeNav === '#contact' || activeNav === '#footer'
+                                ? 'nav__link active-link'
+                                : 'nav__link'
+                        }>
                         <i className="ri-mail-open-line"></i>
                         <span className='nav__name'>
                             Contact
