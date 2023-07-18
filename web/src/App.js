@@ -6,6 +6,7 @@ import About from './components/about/About';
 import Skills from './components/skills/Skills';
 import Qualification from './components/qualification/Qualification';
 import Achievements from './components/achievements/Achievements';
+import Footer from './components/footer/Footer';
 
 function App() {
   return (
@@ -20,6 +21,8 @@ function App() {
         <Qualification />
         <Achievements />
       </main>
+
+      <Footer />      
 
     </>
   );
