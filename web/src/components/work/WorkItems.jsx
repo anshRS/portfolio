@@ -16,7 +16,7 @@ const WorkItems = ({ item }) => {
             </span>
 
             {toggleState && (
-                <div className="work__modal" onClick={toggleTab}>
+                <div className="work__modal">
                     <div className="work__modal-content">
                         <i className="ri-close-line work__modal-close" onClick={toggleTab}></i>
 
