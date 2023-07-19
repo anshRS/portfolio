@@ -8,21 +8,21 @@ const Tools = () => {
             <div className='skills__box'>
                 <div className="skills__group">
                     <div className="skills__data">
-                        <i class="ri-sparkling-fill"></i>
+                        <i className="ri-sparkling-fill"></i>
                         <div>
                             <h3 className="skills__name">Git</h3>
                             <span className="skills__level">Intermediate</span>
                         </div>
                     </div>
                     <div className="skills__data">
-                        <i class="ri-sparkling-fill"></i>
+                        <i className="ri-sparkling-fill"></i>
                         <div>
                             <h3 className="skills__name">Canva</h3>
                             <span className="skills__level">Basic</span>
                         </div>
                     </div>
                     <div className="skills__data">
-                        <i class="ri-sparkling-fill"></i>
+                        <i className="ri-sparkling-fill"></i>
                         <div>
                             <h3 className="skills__name">Figma</h3>
                             <span className="skills__level">Basic</span>
@@ -32,21 +32,21 @@ const Tools = () => {
                 
                 <div className="skills__group">
                     <div className="skills__data">
-                        <i class="ri-sparkling-fill"></i>
+                        <i className="ri-sparkling-fill"></i>
                         <div>
                             <h3 className="skills__name">Inkscape</h3>
                             <span className="skills__level">Basic</span>
                         </div>
                     </div>
                     <div className="skills__data">
-                        <i class="ri-sparkling-fill"></i>
+                        <i className="ri-sparkling-fill"></i>
                         <div>
                             <h3 className="skills__name">Postman</h3>
                             <span className="skills__level">Basic</span>
                         </div>
                     </div>
                     <div className="skills__data">
-                        <i class="ri-sparkling-fill"></i>
+                        <i className="ri-sparkling-fill"></i>
                         <div>
                             <h3 className="skills__name">Slack</h3>
                             <span className="skills__level">Intermediate</span>

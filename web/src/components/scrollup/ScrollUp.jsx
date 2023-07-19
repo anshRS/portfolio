@@ -9,7 +9,7 @@ const ScrollUp = () => {
     })
     return (
         <a href="#home" className="scrollup">
-            <i class="ri-arrow-up-line scrollup__icon"></i>
+            <i className="ri-arrow-up-line scrollup__icon"></i>
         </a>
     )
 }

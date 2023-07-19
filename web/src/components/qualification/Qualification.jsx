@@ -22,7 +22,7 @@ const Qualification = () => {
                     }
                     onClick={() => toggleTab(1)}
                     >
-                        <i class="ri-graduation-cap-line qualification__icon"></i> Education
+                        <i className="ri-graduation-cap-line qualification__icon"></i> Education
                     </div>
 
                     <div className={
@@ -31,7 +31,7 @@ const Qualification = () => {
                             : "qualification__button button__flex"
                     }
                     onClick={() => toggleTab(2)}>
-                        <i class="ri-briefcase-line qualification__icon"></i> Experience
+                        <i className="ri-briefcase-line qualification__icon"></i> Experience
                     </div>
                 </div>
 
@@ -48,7 +48,7 @@ const Qualification = () => {
                                     Punjab Engineering College | Sector 12, Chandigarh, India
                                 </span>
                                 <div className="qualification__calendar">
-                                    <i class="ri-calendar-line"></i> 2021 - Present
+                                    <i className="ri-calendar-line"></i> 2021 - Present
                                 </div>
                             </div>
 
@@ -76,7 +76,7 @@ const Qualification = () => {
                                 Govt Model Sr Sec School | Sector 35, Chandigarh, India
                                 </span>
                                 <div className="qualification__calendar">
-                                    <i class="ri-calendar-line"></i> 2020 - 2021
+                                    <i className="ri-calendar-line"></i> 2020 - 2021
                                 </div>
                             </div>
                         </div>
@@ -88,7 +88,7 @@ const Qualification = () => {
                                 Ashiana Public School | Sector 46, Chandigarh, India
                                 </span>
                                 <div className="qualification__calendar">
-                                    <i class="ri-calendar-line"></i> 2018 - 2019
+                                    <i className="ri-calendar-line"></i> 2018 - 2019
                                 </div>
                             </div>
 
@@ -113,7 +113,7 @@ const Qualification = () => {
                                     Implementatin Body member of PEC ACM CSS
                                 </span>
                                 <div className="qualification__calendar">
-                                    <i class="ri-calendar-line"></i> Jan-May 2023
+                                    <i className="ri-calendar-line"></i> Jan-May 2023
                                 </div>
                             </div>
 
@@ -141,7 +141,7 @@ const Qualification = () => {
                                     Ideathon 2.0 conducted by PEC ACM CSS
                                 </span>
                                 <div className="qualification__calendar">
-                                    <i class="ri-calendar-line"></i> Nov-Dec 2022
+                                    <i className="ri-calendar-line"></i> Nov-Dec 2022
                                 </div>
                             </div>
                         </div>                        
