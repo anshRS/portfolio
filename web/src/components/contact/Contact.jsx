@@ -1,18 +1,32 @@
 import React, { useRef } from 'react';
+import { useFormik } from 'formik';
 import emailjs from '@emailjs/browser';
 import './contact.css'
+import { sendMessageSchema } from './schemas';
 
 const Contact = () => {
     const form = useRef();
+    const formik = useFormik({
+        initialValues: {
+            name: '',
+            email: '',
+            project: '',
+        },
+        validationSchema: sendMessageSchema,
+        onSubmit: async (values, action) => {
 
-    const sendEmail = (e) => {
-        e.preventDefault();
+            try {
+                await emailjs.sendForm(process.env.REACT_APP_YOUR_SERVICE_ID, process.env.REACT_APP_YOUR_TEMPLATE_ID, form.current, process.env.REACT_APP_YOUR_PUBLIC_KEY
+                )
+                
+            } catch (error) {
+                console.log(error)
+            }
 
-        emailjs.sendForm(process.env.REACT_APP_YOUR_SERVICE_ID, process.env.REACT_APP_YOUR_TEMPLATE_ID, form.current, process.env.REACT_APP_YOUR_PUBLIC_KEY
-        )
+            action.resetForm();
+        },
+    });
 
-        e.target.reset()
-    };
     return (
         <section className="contact section" id="contact">
             <h2 className="section__title">Get in touch</h2>
@@ -50,14 +64,21 @@ const Contact = () => {
                 <div className="contact__content">
                     <h3 className="contact__title">Write me your project</h3>
 
-                    <form ref={form} onSubmit={sendEmail} className="contact__form">
+                    <form ref={form} onSubmit={formik.handleSubmit} className="contact__form">
                         <div className="contact__form-div">
                             <label className="contact__form-tag">Name</label>
                             <input
                                 type="text"
                                 name='name'
                                 className="contact__form-input"
-                                placeholder='Enter your name' />
+                                placeholder='Enter your name'
+                                onChange={formik.handleChange}
+                                onBlur={formik.handleBlur}
+                                value={formik.values.name}
+                            />
+                            {formik.touched.name && formik.errors.name ? (
+                                <div className='contact__error-div'>{formik.errors.name}</div>
+                            ) : null}
                         </div>
 
                         <div className="contact__form-div">
@@ -66,15 +87,34 @@ const Contact = () => {
                                 type="email"
                                 name='email'
                                 className="contact__form-input"
-                                placeholder='Enter your email' />
+                                placeholder='Enter your email'
+                                onChange={formik.handleChange}
+                                onBlur={formik.handleBlur}
+                                value={formik.values.email}
+                            />
+                            {formik.touched.email && formik.errors.email ? (
+                                <div className='contact__error-div'>{formik.errors.email}</div>
+                            ) : null}
                         </div>
 
                         <div className="contact__form-div contact__form-area">
                             <label className="contact__form-tag">Project</label>
-                            <textarea name="project" cols="30" rows="10" className='contact__form-input' placeholder='Write your project'></textarea>
+                            <textarea
+                                name="project"
+                                cols="30"
+                                rows="10"
+                                className='contact__form-input'
+                                placeholder='Write your project'
+                                onChange={formik.handleChange}
+                                onBlur={formik.handleBlur}
+                                value={formik.values.project}
+                            ></textarea>
+                            {formik.touched.project && formik.errors.project ? (
+                                <div className='contact__error-textarea'>{formik.errors.project}</div>
+                            ) : null}
                         </div>
 
-                        <button className="button button__flex">
+                        <button type='submit' className="button button__flex">
                             Send Message
                             <svg
                                 className="button__icon"
