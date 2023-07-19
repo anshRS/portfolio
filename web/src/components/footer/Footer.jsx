@@ -27,7 +27,7 @@ const Footer = () => {
                     </ul>
 
                     <div className="footer__social">
-                        <a href="https://gmail.com/" className="footer__social-link" target="_blank" rel="noopener noreferrer">
+                        <a href={`mailto:${process.env.REACT_APP_YOUR_EMAIL}`} className="footer__social-link" target="_blank" rel="noopener noreferrer">
                             <i className="ri-mail-line"></i>
                         </a>
                         <a href="https://www.linkedin.com/in/anshrs" className="footer__social-link" target="_blank" rel="noopener noreferrer">

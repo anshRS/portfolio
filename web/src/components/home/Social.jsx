@@ -3,7 +3,7 @@ import React from 'react'
 const Social = () => {
     return (
         <div className="home__social">
-            <a href="https://gmail.com/" className="home__social-icon" target="_blank" rel="noopener noreferrer">
+            <a href={`mailto:${process.env.REACT_APP_YOUR_EMAIL}`} className="home__social-icon" target="_blank" rel="noopener noreferrer">
                 <i className="ri-mail-line"></i>
             </a>
             <a href="https://www.linkedin.com/in/anshrs" className="home__social-icon" target="_blank" rel="noopener noreferrer">
