@@ -37,7 +37,7 @@ const WorkItems = ({ item }) => {
 
 
                         <div>
-                        <a href="#" className='work__modal-tech-button button__flex'>
+                        <a href={item.demo} className='work__modal-tech-button button__flex' target="_blank" rel="noopener noreferrer">
                             Demo
                         </a>
                         </div>

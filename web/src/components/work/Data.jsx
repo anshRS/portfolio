@@ -12,7 +12,8 @@ export const projectsData = [
         title: "Portfolio Website",
         category: "web",
         description: "A visually captivating and user-friendly portfolio website showcasing a diverse collection of creative projects and accomplishments, highlighting my unique talents and expertise.",
-        technologies: ['HTML', 'CSS', 'JavaScript', 'React']
+        technologies: ['HTML', 'CSS', 'JavaScript', 'React'],
+        demo: 'https://github.com/anshRS/portfolio'
     },
     {
         id: 2,
@@ -20,7 +21,8 @@ export const projectsData = [
         title: "Social Media Website",
         category: "web",
         description: "Unleash a seamless social networking experience with authentication. Connect, explore, create, and customize your journey with friends, profiles, posts, and light/dark modes.",
-        technologies: ['React', 'MUI', 'Node js', 'Express js', 'MongoDB']
+        technologies: ['React', 'MUI', 'Node js', 'Express js', 'MongoDB'],
+        demo: 'https://github.com/anshRS/conare'
     },
     {
         id: 3,
@@ -28,7 +30,8 @@ export const projectsData = [
         title: "Recruitment Website",
         category: "web",
         description: "A fully functional project developed to have an effective, flexible and versatile recruiting application in order to provide better experience for the recruitment process.",
-        technologies: ['HTML', 'CSS', 'JavaScript', 'React', 'Django']
+        technologies: ['HTML', 'CSS', 'JavaScript', 'React', 'Django'],
+        demo: 'https://genexp.vercel.app/'
     },
     {
         id: 4,
@@ -36,7 +39,8 @@ export const projectsData = [
         title: "TechMarvy Website",
         category: "web",
         description: "Built a fully responsive UI of the website for Techmarvy Solutions Company along with deployment and the implementation of Google Analytics.",
-        technologies: ['React', 'MUI', 'JavaScript', 'HTML', 'CSS']
+        technologies: ['React', 'MUI', 'JavaScript', 'HTML', 'CSS'],
+        demo: 'https://techmarvy.com/'
     },
     {
         id: 5,
@@ -44,7 +48,8 @@ export const projectsData = [
         title: "Flutter E-Commerce App",
         category: "app",
         description: "An all-inclusive Full Stack Shopping App with a robust Admin Panel, empowering users seamless browsing, and personalized shopping experience.",
-        technologies: ['Flutter', 'Provider', 'Node js', 'Express js', 'MongoDB']
+        technologies: ['Flutter', 'Provider', 'Node js', 'Express js', 'MongoDB'],
+        demo: 'https://github.com/anshRS/martapp'
     },
     {
         id: 6,
@@ -52,7 +57,8 @@ export const projectsData = [
         title: "TechMarvy CTM App",
         category: "app",
         description: "TechMarvy CTM Flutter app exemplifies seamless navigation, proficient data fetching, and real-time graph plotting & analysis capabilities, empowering users to access and interpret dynamic data with precision and efficiency.",
-        technologies: ['Flutter', 'Provider', 'Charts_Flutter']
+        technologies: ['Flutter', 'Provider', 'Charts_Flutter'],
+        demo: 'https://www.youtube.com/watch?v=EkrG6RDMTvA'
     },
 ];
 
