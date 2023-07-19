@@ -14,8 +14,7 @@ const Header = () => {
                 const sectionTop = current.offsetTop - 58;
                 const sectionId = current.getAttribute('id');
 
-                if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
-                    console.log(sectionId)
+                if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {                    
                     setActiveNav('#'+ sectionId);
                     
                 }
@@ -77,7 +76,7 @@ const Header = () => {
                         href='#portfolio'
                         onClick={() => setActiveNav('#portfolio')}
                         className={
-                            activeNav === '#portfolio' || activeNav === '#achievements'
+                            activeNav === '#portfolio' || activeNav === '#achievements' || activeNav === '#qualification'
                                 ? 'nav__link active-link'
                                 : 'nav__link'
                         }>
