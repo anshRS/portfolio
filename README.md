@@ -14,3 +14,8 @@ As a web developer and mobile app enthusiast, I'm thrilled to showcase my journe
 * `CSS`
 * `JAVASCRIPT`
 * `REACT JS`
+
+## Watch it!
+Demo video showing the working of the website. Navigating through different sections:
+
+https://github.com/anshRS/portfolio/assets/114407607/6ed2d2ed-5eed-4ac4-971f-2cbb6ea05df7
