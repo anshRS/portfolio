@@ -50,7 +50,7 @@ const Contact = () => {
                             <i className="ri-whatsapp-line contact__card-icon"></i>
 
                             <h3 className="contact__card-title">Whatsapp</h3>
-                            <span className="contact__card-data">{process.env.REACT_APP_YOUR_PHONE}</span>
+                            <span className="contact__card-data">+91 {process.env.REACT_APP_YOUR_PHONE}</span>
 
                             <a
                                 href={`https://api.whatsapp.com/send?phone=${process.env.REACT_APP_YOUR_PHONE}&text=Hello, more information!`} className="contact__button"
