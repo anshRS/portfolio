@@ -113,7 +113,7 @@ const Qualification = () => {
                                     Implementatin Body member of PEC ACM CSS
                                 </span>
                                 <div className="qualification__calendar">
-                                    <i className="ri-calendar-line"></i> Jan-May 2023
+                                    <i className="ri-calendar-line"></i> Jan 2023 - Present
                                 </div>
                             </div>
 
@@ -144,7 +144,26 @@ const Qualification = () => {
                                     <i className="ri-calendar-line"></i> Nov-Dec 2022
                                 </div>
                             </div>
-                        </div>                        
+                        </div>  
+
+                        <div className="qualification__data">
+                            <div>
+                                <h3 className="qualification__title">Member</h3>
+                                <span className="qualification__subtitle">
+                                    Member of PEC ACM CSS
+                                </span>
+                                <div className="qualification__calendar">
+                                    <i className="ri-calendar-line"></i> Jan-Dec 2022
+                                </div>
+                            </div>
+
+                            <div>
+                                <span className="qualification__rounder"></span>
+                                <span className="qualification__line">
+
+                                </span>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
