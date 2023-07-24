@@ -13,7 +13,7 @@ export const projectsData = [
         category: "web",
         description: "A visually captivating and user-friendly portfolio website showcasing a diverse collection of creative projects and accomplishments, highlighting my unique talents and expertise.",
         technologies: ['HTML', 'CSS', 'JavaScript', 'React'],
-        demo: 'https://github.com/anshRS/portfolio'
+        demo: 'https://ansh-raj-sharma.vercel.app/'
     },
     {
         id: 2,
@@ -58,7 +58,7 @@ export const projectsData = [
         category: "app",
         description: "TechMarvy CTM Flutter app exemplifies seamless navigation, proficient data fetching, and real-time graph plotting & analysis capabilities, empowering users to access and interpret dynamic data with precision and efficiency.",
         technologies: ['Flutter', 'Provider', 'Charts_Flutter'],
-        demo: 'https://www.youtube.com/watch?v=EkrG6RDMTvA'
+        demo: 'https://www.canva.com/design/DAFpiYTttvA/dPPVAZhoUFcWk3CAQUsVYA/watch?'
     },
 ];
 
