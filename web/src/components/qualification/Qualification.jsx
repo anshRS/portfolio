@@ -108,12 +108,52 @@ const Qualification = () => {
                     }>
                         <div className="qualification__data">
                             <div>
+                                <h3 className="qualification__title">EB Member</h3>
+                                <span className="qualification__subtitle">
+                                    Executive Body member of PEC ACM CSS
+                                </span>
+                                <div className="qualification__calendar">
+                                    <i className="ri-calendar-line"></i> Jul 2023 - Present
+                                </div>
+                            </div>
+
+                            <div>
+                                <span className="qualification__rounder"></span>
+                                <span className="qualification__line">
+
+                                </span>
+                            </div>
+                        </div>
+
+                        <div className="qualification__data">
+                            <div></div>
+
+                            <div>
+                                <span className="qualification__rounder"></span>
+                                <span className="qualification__line">
+
+                                </span>
+                            </div>
+
+                            <div>
+                                <h3 className="qualification__title">Team Lead</h3>
+                                <span className="qualification__subtitle">
+                                    STG Code Blooded 5.0 conducted by STGI Technologies Consulting Pvt Ltd
+                                </span>
+                                <div className="qualification__calendar">
+                                    <i className="ri-calendar-line"></i> Sep-Oct 2023
+                                </div>
+                            </div>
+                        </div> 
+
+                        <div className="qualification__data">
+                            <div>
                                 <h3 className="qualification__title">IB Member</h3>
                                 <span className="qualification__subtitle">
                                     Implementatin Body member of PEC ACM CSS
                                 </span>
                                 <div className="qualification__calendar">
-                                    <i className="ri-calendar-line"></i> Jan 2023 - Present
+                                    <i className="ri-calendar-line"></i> Jan 2023 - Jul 2023
                                 </div>
                             </div>
 
