@@ -10,12 +10,13 @@ import Achievements from './components/achievements/Achievements';
 import Contact from './components/contact/Contact';
 import Footer from './components/footer/Footer';
 import ScrollUp from './components/scrollup/ScrollUp';
+import ThemeToggle from './components/common/theme-toggle';
 
 function App() {
   return (
     <>
-
       <Header />
+      <ThemeToggle />
 
       <main className='main'>
         <Home />
@@ -29,7 +30,6 @@ function App() {
 
       <Footer />
       <ScrollUp />
-
     </>
   );
 }

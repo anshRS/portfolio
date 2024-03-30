@@ -1,0 +1,42 @@
+.toggle {
+    position: fixed;
+    right: 2.5rem;
+    top: 1.5rem;
+    background-color: var(--primary-color);   
+    opacity: 0.8; 
+    padding: 0.3rem 0.5rem;
+    border-radius: 0.4rem;
+    z-index: var(--z-tooltip);
+    transition: .4s;
+}
+
+.toggle__icon {
+    font-size: 1.5rem;
+    color: var(--container-color);   
+}
+
+.toggle:hover {
+    background-color: var(--secondary-color);
+}
+
+
+/* Breakpoints */
+
+/* For large devices */
+@media screen and (max-width: 992px) {
+    .toggle {
+        right: 1.5rem;
+        padding: 0.25rem 0.4rem;
+    } 
+    
+    .toggle__icon {
+        font-size: 1.25rem;
+    }
+}
+
+/* For small devices */
+@media screen and (max-width: 350px) {
+    .toggle {
+        right: 1rem;
+    }
+}
