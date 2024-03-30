@@ -28,7 +28,7 @@
 
 .work__card {
     background-color: var(--container-color);
-    border: 1px solid rgba(0, 0, 0, 0.1);
+    border: 1px solid var(--border);
     padding: 1.25rem;
     border-radius: 1rem;
 }
@@ -36,7 +36,7 @@
 .work__img {
     width: 295px;
     border-radius: 1rem;
-    border: 1px solid rgba(0, 0, 0, 0.1);
+    border: 1px solid var(--border);
     margin-bottom: var(--mb-1);
 }
 
@@ -150,7 +150,7 @@
 .work__modal-img {
     
     border-radius: 0.5rem;
-    border: 1px solid rgba(0, 0, 0, 0.1);
+    border: 1px solid var(--border);
     margin-bottom: var(--mb-1);
 }
 

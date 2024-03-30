@@ -37,8 +37,8 @@
     font-size: var(--tiny-font-size);
     position: absolute;
     font-weight: 500;
-    transform: translateY(50px);
-    color: var(--body-color);
+    transform: translateY(50px);    
+    color: hsl(0, 0%, 98%);
     z-index: 20;
     transition: 0.4s;
     opacity: 0;
@@ -55,8 +55,8 @@
 }
 
 /* Active Link */
-.active-link i {
-    color: var(--body-color);
+.active-link i {    
+    color: hsl(0, 0%, 98%);
 }
 
 .active-link .nav__name {
