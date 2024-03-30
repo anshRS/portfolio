@@ -10,21 +10,21 @@ const Frontend = () => {
                     <div className="skills__data">
                         <i className="ri-sparkling-fill"></i>
                         <div>
-                            <h3 className="skills__name">HTML</h3>
+                            <h3 className="skills__name">HTML | CSS</h3>
                             <span className="skills__level">Intermediate</span>
                         </div>
                     </div>
                     <div className="skills__data">
                         <i className="ri-sparkling-fill"></i>
                         <div>
-                            <h3 className="skills__name">CSS</h3>
+                            <h3 className="skills__name">TypeScript</h3>
                             <span className="skills__level">Intermediate</span>
                         </div>
                     </div>
                     <div className="skills__data">
                         <i className="ri-sparkling-fill"></i>
                         <div>
-                            <h3 className="skills__name">JavaScript</h3>
+                            <h3 className="skills__name">Flutter</h3>
                             <span className="skills__level">Intermediate</span>
                         </div>
                     </div>
