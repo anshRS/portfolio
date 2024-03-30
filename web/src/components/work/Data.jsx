@@ -1,9 +1,10 @@
 import Work1 from '../../assets/portfolio.png'
-import Work2 from '../../assets/conare.png'
-import Work3 from '../../assets/genexp.png'
-import Work4 from '../../assets/techmarvy.png'
+import Work2 from '../../assets/chatbot.png'
+import Work3 from '../../assets/conare.png'
+import Work4 from '../../assets/genexp.png'
 import Work5 from '../../assets/martapp.png'
 import Work6 from '../../assets/tmapp.png'
+// import Work7 from '../../assets/techmarvy.png'
 
 export const projectsData = [
     {
@@ -18,6 +19,15 @@ export const projectsData = [
     {
         id: 2,
         image: Work2,
+        title: "Chatbot Using RAG",
+        category: "AI",
+        description: "Developed a chatbot using RAG pipeline that leverages the llama2 model for processing user queries and generating responses.",
+        technologies: ['Next JS 14', 'TypeScript', 'TailwindCSS', 'Django', 'PostgreSQL', 'LangChain', 'LLaMA', 'Docker'],
+        demo: 'https://github.com/anshRS/chatbot'
+    },
+    {
+        id: 3,
+        image: Work3,
         title: "Social Media Website",
         category: "web",
         description: "Unleash a seamless social networking experience with authentication. Connect, explore, create, and customize your journey with friends, profiles, posts, and light/dark modes.",
@@ -25,23 +35,14 @@ export const projectsData = [
         demo: 'https://github.com/anshRS/conare'
     },
     {
-        id: 3,
-        image: Work3,
+        id: 4,
+        image: Work4,
         title: "Recruitment Website",
         category: "web",
         description: "A fully functional project developed to have an effective, flexible and versatile recruiting application in order to provide better experience for the recruitment process.",
         technologies: ['HTML', 'CSS', 'JavaScript', 'React', 'Django'],
         demo: 'https://genexp.vercel.app/'
-    },
-    {
-        id: 4,
-        image: Work4,
-        title: "TechMarvy Website",
-        category: "web",
-        description: "Built a fully responsive UI of the website for Techmarvy Solutions Company along with deployment and the implementation of Google Analytics.",
-        technologies: ['React', 'MUI', 'JavaScript', 'HTML', 'CSS'],
-        demo: 'https://techmarvy.com/'
-    },
+    },  
     {
         id: 5,
         image: Work5,
@@ -60,6 +61,15 @@ export const projectsData = [
         technologies: ['Flutter', 'Provider', 'Charts_Flutter'],
         demo: 'https://www.canva.com/design/DAFpiYTttvA/dPPVAZhoUFcWk3CAQUsVYA/watch?'
     },
+      // {
+    //     id: 7,
+    //     image: Work7,
+    //     title: "TechMarvy Website",
+    //     category: "web",
+    //     description: "Built a fully responsive UI of the website for Techmarvy Solutions Company along with deployment and the implementation of Google Analytics.",
+    //     technologies: ['React', 'MUI', 'JavaScript', 'HTML', 'CSS'],
+    //     demo: 'https://techmarvy.com/'
+    // },
 ];
 
 export const projectsNav = [
@@ -72,7 +82,7 @@ export const projectsNav = [
     {
         name: 'app',
     },
-    // {
-    //     name: 'design',
-    // },
+    {
+        name: 'AI',
+    },
 ]
