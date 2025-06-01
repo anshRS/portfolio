@@ -1,8 +1,9 @@
 import Work1 from '../../assets/portfolio.png'
-import Work2 from '../../assets/chatbot.png'
-import Work3 from '../../assets/conare.png'
-import Work4 from '../../assets/genexp.png'
-import Work5 from '../../assets/martapp.png'
+import Work2 from '../../assets/xagent.png'
+import Work3 from '../../assets/chatbot.png'
+import Work4 from '../../assets/conare.png'
+import Work5 from '../../assets/genexp.png'
+// import Work5 from '../../assets/martapp.png'
 import Work6 from '../../assets/tmapp.png'
 // import Work7 from '../../assets/techmarvy.png'
 
@@ -19,6 +20,15 @@ export const projectsData = [
     {
         id: 2,
         image: Work2,
+        title: "xAgent Using MCP",
+        category: "app",
+        description: "xAgent is a mobile-first, multi-agent AI system powered by LLMs, featuring real-time chat, coding, and finance built with LangGraph workflows and MCP.",
+        technologies: ['Dart', 'Flutter', 'Bloc', 'Python', 'FastAPI', 'Supabase', 'LangChain', 'LangGraph', 'MCP'],
+        demo: 'https://github.com/anshRS/xautoflow'
+    },
+    {
+        id: 3,
+        image: Work3,
         title: "Chatbot Using RAG",
         category: "AI",
         description: "Developed a chatbot using RAG pipeline that leverages the llama2 model for processing user queries and generating responses.",
@@ -26,8 +36,8 @@ export const projectsData = [
         demo: 'https://github.com/anshRS/chatbot'
     },
     {
-        id: 3,
-        image: Work3,
+        id: 4,
+        image: Work4,
         title: "Social Media Website",
         category: "web",
         description: "Unleash a seamless social networking experience with authentication. Connect, explore, create, and customize your journey with friends, profiles, posts, and light/dark modes.",
@@ -35,23 +45,23 @@ export const projectsData = [
         demo: 'https://github.com/anshRS/conare'
     },
     {
-        id: 4,
-        image: Work4,
+        id: 5,
+        image: Work5,
         title: "Recruitment Website",
         category: "web",
         description: "A fully functional project developed to have an effective, flexible and versatile recruiting application in order to provide better experience for the recruitment process.",
         technologies: ['HTML', 'CSS', 'JavaScript', 'React', 'Django'],
         demo: 'https://genexp.vercel.app/'
-    },  
-    {
-        id: 5,
-        image: Work5,
-        title: "Flutter E-Commerce App",
-        category: "app",
-        description: "An all-inclusive Full Stack Shopping App with a robust Admin Panel, empowering users seamless browsing, and personalized shopping experience.",
-        technologies: ['Flutter', 'Provider', 'Node js', 'Express js', 'MongoDB'],
-        demo: 'https://github.com/anshRS/martapp'
     },
+    // {
+    //     id: 5,
+    //     image: Work5,
+    //     title: "Flutter E-Commerce App",
+    //     category: "app",
+    //     description: "An all-inclusive Full Stack Shopping App with a robust Admin Panel, empowering users seamless browsing, and personalized shopping experience.",
+    //     technologies: ['Flutter', 'Provider', 'Node js', 'Express js', 'MongoDB'],
+    //     demo: 'https://github.com/anshRS/martapp'
+    // },
     {
         id: 6,
         image: Work6,
@@ -61,7 +71,7 @@ export const projectsData = [
         technologies: ['Flutter', 'Provider', 'Charts_Flutter'],
         demo: 'https://www.canva.com/design/DAFpiYTttvA/dPPVAZhoUFcWk3CAQUsVYA/watch?'
     },
-      // {
+    // {
     //     id: 7,
     //     image: Work7,
     //     title: "TechMarvy Website",
