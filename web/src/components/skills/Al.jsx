@@ -11,7 +11,7 @@ const Ai = () => {
                         <i className="ri-sparkling-fill"></i>
                         <div>
                             <h3 className="skills__name">PyTorch</h3>
-                            <span className="skills__level">Basic</span>
+                            <span className="skills__level">Intermediate</span>
                         </div>
                     </div>
                     <div className="skills__data">
@@ -24,7 +24,7 @@ const Ai = () => {
                     <div className="skills__data">
                         <i className="ri-sparkling-fill"></i>
                         <div>
-                            <h3 className="skills__name">Transformers</h3>
+                            <h3 className="skills__name">LangChain</h3>
                             <span className="skills__level">Intermediate</span>
                         </div>
                     </div>
@@ -35,7 +35,7 @@ const Ai = () => {
                         <i className="ri-sparkling-fill"></i>
                         <div>
                             <h3 className="skills__name">TensorFlow</h3>
-                            <span className="skills__level">Basic</span>
+                            <span className="skills__level">Intermediate</span>
                         </div>
                     </div>
                     <div className="skills__data">
@@ -48,7 +48,7 @@ const Ai = () => {
                     <div className="skills__data">
                         <i className="ri-sparkling-fill"></i>
                         <div>
-                            <h3 className="skills__name">LangChain</h3>
+                            <h3 className="skills__name">LangGraph</h3>
                             <span className="skills__level">Intermediate</span>
                         </div>
                     </div>
